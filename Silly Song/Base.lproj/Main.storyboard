@@ -10,6 +10,7 @@
     </dependencies>
     <customFonts key="customFonts">
         <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
             <string>HelveticaNeue-Medium</string>
         </array>
     </customFonts>
@@ -23,7 +24,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Silly Song" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oa7-Ic-xDF">
-                                <rect key="frame" x="84.5" y="73" width="206" height="48"/>
+                                <rect key="frame" x="85" y="73" width="206" height="48"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="206" id="pKk-WB-ueT"/>
                                     <constraint firstAttribute="height" constant="48" id="tvj-lD-wjj"/>
@@ -32,37 +33,41 @@
                                 <color key="textColor" red="0.061569873147597716" green="0.34385818829414688" blue="0.66027768782383411" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Your Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VmH-Z4-MmU">
-                                <rect key="frame" x="16" y="170" width="343" height="30"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Your Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VmH-Z4-MmU">
+                                <rect key="frame" x="33" y="170" width="316" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="done"/>
+                                <connections>
+                                    <action selector="displayLyrics:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="bPo-H2-w18"/>
+                                    <action selector="reset:" destination="BYZ-38-t0r" eventType="editingDidBegin" id="yJb-4c-2qa"/>
+                                </connections>
                             </textField>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MMe-qc-JMr">
                                 <rect key="frame" x="72" y="246" width="240" height="128"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="240" id="tM3-qe-Ey8"/>
-                                    <constraint firstAttribute="height" constant="128" id="tYM-VX-RqR"/>
-                                </constraints>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="MMe-qc-JMr" firstAttribute="centerX" secondItem="VmH-Z4-MmU" secondAttribute="centerX" id="Dye-4A-Cdj"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VmH-Z4-MmU" secondAttribute="trailing" constant="83" id="JRH-pq-Wt8"/>
-                            <constraint firstItem="MMe-qc-JMr" firstAttribute="top" secondItem="VmH-Z4-MmU" secondAttribute="bottom" constant="46" id="Kwf-7c-0So"/>
-                            <constraint firstItem="VmH-Z4-MmU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="92" id="NBT-jN-Unn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="MMe-qc-JMr" secondAttribute="bottom" constant="293" id="Ddm-z6-bJt"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MMe-qc-JMr" secondAttribute="trailing" constant="63" id="Hop-oi-MRH"/>
+                            <constraint firstItem="MMe-qc-JMr" firstAttribute="top" secondItem="VmH-Z4-MmU" secondAttribute="bottom" constant="46" id="Lko-p9-KZX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VmH-Z4-MmU" secondAttribute="trailing" constant="26" id="R00-7J-fbV"/>
                             <constraint firstItem="oa7-Ic-xDF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="53" id="VkP-wc-9VO"/>
                             <constraint firstItem="oa7-Ic-xDF" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ZEF-8Z-jHS"/>
-                            <constraint firstItem="VmH-Z4-MmU" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="hxK-Kg-zbX"/>
-                            <constraint firstItem="VmH-Z4-MmU" firstAttribute="top" secondItem="oa7-Ic-xDF" secondAttribute="bottom" constant="49" id="qbK-QN-wd2"/>
+                            <constraint firstItem="VmH-Z4-MmU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="33" id="jLL-hf-bg9"/>
+                            <constraint firstItem="MMe-qc-JMr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="72" id="qi8-MW-qc0"/>
+                            <constraint firstItem="VmH-Z4-MmU" firstAttribute="top" secondItem="oa7-Ic-xDF" secondAttribute="bottom" constant="49" id="yvm-3v-dvK"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="lyricsView" destination="MMe-qc-JMr" id="LIV-aN-4bc"/>
+                        <outlet property="nameField" destination="VmH-Z4-MmU" id="W2w-iZ-SGI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

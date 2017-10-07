@@ -24,9 +24,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Silly Song" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oa7-Ic-xDF">
-                                <rect key="frame" x="85" y="73" width="206" height="48"/>
+                                <rect key="frame" x="131" y="73" width="114.5" height="48"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="206" id="pKk-WB-ueT"/>
                                     <constraint firstAttribute="height" constant="48" id="tvj-lD-wjj"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="25"/>
@@ -34,7 +33,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Your Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VmH-Z4-MmU">
-                                <rect key="frame" x="33" y="170" width="316" height="30"/>
+                                <rect key="frame" x="30" y="161" width="315" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="done"/>
@@ -44,7 +43,7 @@
                                 </connections>
                             </textField>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="MMe-qc-JMr">
-                                <rect key="frame" x="72" y="246" width="240" height="128"/>
+                                <rect key="frame" x="20" y="211" width="335" height="436"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -52,15 +51,15 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="MMe-qc-JMr" secondAttribute="bottom" constant="293" id="Ddm-z6-bJt"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MMe-qc-JMr" secondAttribute="trailing" constant="63" id="Hop-oi-MRH"/>
-                            <constraint firstItem="MMe-qc-JMr" firstAttribute="top" secondItem="VmH-Z4-MmU" secondAttribute="bottom" constant="46" id="Lko-p9-KZX"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VmH-Z4-MmU" secondAttribute="trailing" constant="26" id="R00-7J-fbV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MMe-qc-JMr" secondAttribute="trailing" constant="20" id="04b-cC-hyU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VmH-Z4-MmU" secondAttribute="trailing" constant="30" id="R00-7J-fbV"/>
                             <constraint firstItem="oa7-Ic-xDF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="53" id="VkP-wc-9VO"/>
                             <constraint firstItem="oa7-Ic-xDF" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ZEF-8Z-jHS"/>
-                            <constraint firstItem="VmH-Z4-MmU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="33" id="jLL-hf-bg9"/>
-                            <constraint firstItem="MMe-qc-JMr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="72" id="qi8-MW-qc0"/>
-                            <constraint firstItem="VmH-Z4-MmU" firstAttribute="top" secondItem="oa7-Ic-xDF" secondAttribute="bottom" constant="49" id="yvm-3v-dvK"/>
+                            <constraint firstItem="MMe-qc-JMr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="i6r-iS-LEl"/>
+                            <constraint firstItem="VmH-Z4-MmU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="jLL-hf-bg9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="MMe-qc-JMr" secondAttribute="bottom" constant="20" id="kVL-bO-K80"/>
+                            <constraint firstItem="MMe-qc-JMr" firstAttribute="top" secondItem="VmH-Z4-MmU" secondAttribute="bottom" constant="20" id="kuD-Dz-C2Z"/>
+                            <constraint firstItem="VmH-Z4-MmU" firstAttribute="top" secondItem="oa7-Ic-xDF" secondAttribute="bottom" constant="40" id="yvm-3v-dvK"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>

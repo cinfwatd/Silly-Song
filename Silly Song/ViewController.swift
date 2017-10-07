@@ -24,11 +24,12 @@ class ViewController: UIViewController {
     }
     
     @IBAction func displayLyrics(_ sender: Any) {
-        if !nameField.text!.isEmpty {
-            lyricsView.text = lyricsForName(lyricsTemplate: bananaFanaTemplate, fullName: nameField.text!)
-        } else {
+        guard let fullName = nameField.text, fullName != "" else {
             lyricsView.text = "Please enter your name to generate silly song."
+            return
         }
+        
+        lyricsView.text = lyricsForName(lyricsTemplate: bananaFanaTemplate, fullName: fullName)
     }
 }
 

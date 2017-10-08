@@ -6,19 +6,13 @@ A simple IOS App that accepts the user's name and generates a silly song with th
 #### Welcome View.
 Prompt the user to provide name to generate Silly song.
 
-![Welcome](images/Sillysong-welcome.png)
-
-#### Name provided
-Validate name and generate silly song.
-
-![Input](images/Sillysong-input.png)
+Welcome | Name Provided
+:-----------------:|:---------------------:
+![Welcome](images/Sillysong-welcome.png)|![Input](images/Sillysong-input.png)
 
 #### Song
 Generate silly song using the provided name.
 
-![Output](images/Sillysong-output.png)
-
-#### Song - Landscape
-Silly song in landscape mode.
-
-![Output - Landscape](images/Sillysong-output-landscape.png)
+Dogak | Dogak - Landscape
+:-------------------------:|:---------------------:
+![Output](images/Sillysong-output.png)|![Output - Landscape](images/Sillysong-output-landscape.png)

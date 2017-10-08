@@ -17,3 +17,8 @@ Validate name and generate silly song.
 Generate silly song using the provided name.
 
 ![Output](images/Sillysong-output.png)
+
+#### Song - Landscape
+Silly song in landscape mode.
+
+![Output - Landscape](images/Sillysong-output-landscape.png)
